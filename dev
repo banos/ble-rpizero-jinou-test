@@ -1,0 +1,13 @@
+# Cross compiling instructions used:
+# https://github.com/diwic/dbus-rs/issues/184
+
+RUST_LOG=DEBUG cargo run
+
+# raspberry pi zero w (armv6l Raspbian GNU/Linux 10 (buster))
+cargo build --target arm-unknown-linux-gnueabihf
+
+scp target/arm-unknown-linux-gnueabihf/debug/ble-rpizero-jinou-test <remote>:
+
+must be run with sudo on pi - need to check
+
+# other doc for cross building dbus: https://github.com/diwic/dbus-rs/blob/master/libdbus-sys/cross_compile.md

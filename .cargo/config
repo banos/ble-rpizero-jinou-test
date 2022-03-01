@@ -1,0 +1,21 @@
+[target.arm-unknown-linux-gnueabihf]
+linker = "/opt/cross-pi-gcc/bin/arm-linux-gnueabihf-gcc"
+
+[target.arm-unknown-linux-gnueabihf.dbus]
+# Specifies the library search paths. Since they cannot be relative paths,
+# we use a build script to provide them.
+rustc-link-search = [
+    # Provided by the build script (build.rs).
+]
+
+# Specifies the names of the native libraries that are required to build DBus.
+rustc-link-lib = [
+    "dbus-1",
+    "gcrypt",
+    "gpg-error",
+    "lz4",
+    "lzma",
+    "pcre",
+    "selinux",
+    "systemd",
+]

@@ -1,0 +1,91 @@
+# some bluetooth resources
+
+https://www.bluetooth.com/specifications/assigned-numbers/
+
+https://www.bluetooth.com/specifications/assigned-numbers/company-identifiers/
+
+https://www.bluetooth.com/specifications/assigned-numbers/environmental-sensing-service-characteristics
+
+https://specificationrefs.bluetooth.com/assigned-values/Appearance%20Values.pdf
+
+Category
+(10 bits)
+1344
+
+Sub-category, Value Definition, Description
+(6 bits)
+0, Generic Sensor, Generic category
+1, Motion Sensor, Sensor subtype
+2, Air Quality Sensor, Sensor subtype
+3, Temperature Sensor, Sensor subtype
+4, Humidity Sensor, Sensor subtype
+...
+18, Multi-sensor, Sensor subtype
+
+
+Jinou_Beacon
+F5:B3:AF:94:9B:23
+uuids [
+    "00001800-0000-1000-8000-00805f9b34fb", 
+    "00001801-0000-1000-8000-00805f9b34fb", 
+    "0000180a-0000-1000-8000-00805f9b34fb", 
+    "0000180f-0000-1000-8000-00805f9b34fb", 
+    "0000f350-0000-1000-8000-00805f9b34fb", 
+    "0000fe59-0000-1000-8000-00805f9b34fb"
+]
+
+Characteristic Names:
+00002a05-0000-1000-8000-00805f9b34fb Service Changed
+00002a29-0000-1000-8000-00805f9b34fb Manufacturer Name String
+00002a24-0000-1000-8000-00805f9b34fb Model Number String
+00002a25-0000-1000-8000-00805f9b34fb Serial Number String
+00002a27-0000-1000-8000-00805f9b34fb Hardware Revision String
+.....
+service001d/char001e 00002a19-0000-1000-8000-00805f9b34fb Battery Level
+...
+service0021/char0031 0000f357-0000-1000-8000-00805f9b34fb ?????
+
+https://btprodspecificationrefs.blob.core.windows.net/assigned-values/16-bit%20UUID%20Numbers%20Document.pdf
+GATT Service 0x1800 Generic Access
+GATT Service 0x1801 Generic Attribute
+GATT Service 0x180A Device Information
+GATT Service 0x180F Battery
+
+GATT Characteristic and Object Type 0x2A6E Temperature
+GATT Characteristic and Object Type 0x2A6F Humidity
+GATT Characteristic and Object Type 0x2A1D Temperature Type
+GATT Characteristic and Object Type 0x2A1E Intermediate Temperature
+GATT Characteristic and Object Type 0x2A21 Measurement Interval
+
+GATT Unit 0x272F Celsius temperature (degree Celsius)
+
+Characteristic - id: 00002a00-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Device Name>  available methods: READ WRITE 
+Characteristic - id: 00002a01-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Appearance>   available methods: READ 
+Characteristic - id: 00002a04-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Peripheral Preferred Connection Parameters>   available methods: READ 
+Characteristic - id: 00002aa6-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Central Address Resolution>   available methods: READ 
+Characteristic - id: 00002a05-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Service Changed>      available methods: INDICATE 
+Characteristic - id: 00002a29-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Manufacturer Name String>     available methods: READ 
+Characteristic - id: 00002a24-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Model Number String>  available methods: READ 
+Characteristic - id: 00002a25-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Serial Number String> available methods: READ 
+Characteristic - id: 00002a27-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Hardware Revision String>     available methods: READ 
+Characteristic - id: 00002a26-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Firmware Revision String>     available methods: READ 
+Characteristic - id: 00002a28-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Software Revision String>     available methods: READ 
+Characteristic - id: 00002a23-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <System ID>    available methods: READ 
+Characteristic - id: 00002a19-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <Battery Level>        available methods: READ NOTIFY 
+Characteristic - id: 0000f3ff-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f3ff> available methods: NOTIFY 
+Characteristic - id: 0000f351-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f351> available methods: READ WRITE 
+Characteristic - id: 0000f352-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f352> available methods: READ WRITE 
+Characteristic - id: 0000f353-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f353> available methods: READ WRITE 
+Characteristic - id: 0000f354-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f354> available methods: READ WRITE 
+Characteristic - id: 0000f355-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f355> available methods: READ WRITE 
+Characteristic - id: 0000f356-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f356> available methods: READ WRITE 
+Characteristic - id: 0000f357-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f357> available methods: READ WRITE 
+Characteristic - id: 0000f358-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f358> available methods: READ WRITE 
+Characteristic - id: 0000f359-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f359> available methods: READ WRITE 
+Characteristic - id: 0000f35a-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f35a> available methods: READ WRITE 
+Characteristic - id: 0000f35b-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f35b> available methods: READ WRITE 
+Characteristic - id: 0000f35c-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f35c> available methods: READ WRITE 
+Characteristic - id: 0000f35d-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f35d> available methods: READ WRITE 
+Characteristic - id: 0000f35e-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f35e> available methods: READ WRITE 
+Characteristic - id: 0000f35f-0000-1000-8000-00805f9b34fb       name (if exists): Characteristic <f35f> available methods: READ WRITE 
+Characteristic - id: 8ec90003-f315-4f60-9fb8-838830daea50       name (if exists): Characteristic <8ec90003-f315-4f60-9fb8-838830daea50> available methods: WRITE INDICATE 
